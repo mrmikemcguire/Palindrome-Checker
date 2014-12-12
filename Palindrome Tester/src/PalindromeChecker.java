@@ -27,16 +27,16 @@ public class PalindromeChecker
 		StringBuffer reversedText = new StringBuffer(originalText);
 		reversedText = reversedText.reverse();
 		System.out.println("Reversed, it reads " +reversedText);
-		System.out.println();
 		
 		if (originalText.contentEquals(reversedText))
 			{
-			System.out.println("It's a palindrome!");
+			System.out.println("It's a palindrome!\n");
+			
 			return true;
 			}
 		else
 			{
-			System.out.println("Alas, it's not a palindome.");
+			System.out.println("Alas, it's not a palindome.\n");
 			return false;
 			}
 		}
