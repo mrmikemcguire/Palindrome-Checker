@@ -11,7 +11,7 @@ public class PalindromeTester
 		String originalText = userInput.nextLine();
 		userInput.close();
 		originalText = originalText.toLowerCase();
-		originalText = originalText.replace(" ","");
+		originalText = originalText.replaceAll("[^\\p{L}\\p{Nd}]+", "");		
 		System.out.println("Your text without spaces is " + originalText);
 		
 		StringBuffer reversedText = new StringBuffer(originalText);
