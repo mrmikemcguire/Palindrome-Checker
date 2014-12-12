@@ -13,6 +13,8 @@ public class PalindromeTester
 		originalText = originalText.toLowerCase();
 		originalText = originalText.replaceAll("[^\\p{L}\\p{Nd}]+", "");
 		System.out.println("Your stripped text is " + originalText);
+		originalText = originalText.replaceAll("[^\\p{L}\\p{Nd}]+", "");		
+		System.out.println("Your text without spaces is " + originalText);
 		
 		StringBuffer reversedText = new StringBuffer(originalText);
 		reversedText = reversedText.reverse();
