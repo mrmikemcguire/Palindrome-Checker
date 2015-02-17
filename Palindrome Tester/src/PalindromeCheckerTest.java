@@ -12,19 +12,19 @@ public class PalindromeCheckerTest extends PalindromeChecker
 	@Test
 	public void FalsePalindrome()
 		{
-		assertEquals(false, PalindromeChecker.checkForPalindrome("Abbaa"));
+		assertEquals("I'm afraid your code is not working.", false, PalindromeChecker.checkForPalindrome("Abbaa"));
 		}
 	
 	@Test
 	public void TestForSpaces()
 		{
-		assertEquals(true, PalindromeChecker.checkForPalindrome("race car"));
+		assertEquals("Did you strip out spaces before checking to see if it's a palindrome?", true, PalindromeChecker.checkForPalindrome("race car"));
 		}
 	
 	@Test
 	public void TestForPunctuation()
 		{
-		assertEquals(true, PalindromeChecker.checkForPalindrome("A man, a plan, a canal - Panama"));
+		assertEquals("Did you strip out all punctuation?", true, PalindromeChecker.checkForPalindrome("A man, a plan, a canal - Panama"));
 		}
 
 	}
