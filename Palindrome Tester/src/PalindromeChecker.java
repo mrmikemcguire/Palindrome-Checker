@@ -21,7 +21,8 @@ public class PalindromeChecker
 	public static boolean checkForPalindrome(String originalText)
 		{
 		originalText = originalText.toLowerCase();
-		originalText = originalText.replaceAll("[^\\p{L}\\p{Nd}]+", "");		
+		originalText = originalText.replaceAll(" ", "");
+		//originalText = originalText.replaceAll("[^\\p{L}\\p{Nd}]+", "");		
 		System.out.println("Your stripped text is " + originalText);
 		
 		StringBuffer reversedText = new StringBuffer(originalText);
